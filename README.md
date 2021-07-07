@@ -68,7 +68,8 @@ See instructions below.
   terraform plan 
   terraform apply
  ```
-  The first command makes sure the azure cli is authorized. 
+ The first command makes sure the azure cli is authorized. 
+
  5) Open the Data Factory in the dev resource group and connect it with the
  provisioned Azure DevOps Repository.
  Now create the following.
