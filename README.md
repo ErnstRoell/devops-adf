@@ -51,6 +51,12 @@ See instructions below.
 
  1) First clone the repository to your local machine and make sure to have the
  Azure CLI and terraform configured.
- 2) 
+ 2) Create a PAT Token for Azure DevOps and fetch the url for your organization
+ and export those using the following (linux) commands. 
+ ```{shell} 
+  export AZDO_PERSONAL_ACCESS_TOKEN="" 
+  export AZDO_ORG_SERVICE_URL=""
+ 
+ ```
 
 
