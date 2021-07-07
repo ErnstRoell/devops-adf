@@ -68,8 +68,8 @@ See instructions below.
   terraform plan 
   terraform apply
  ```
- The first command makes sure the azure cli is authorized. 
- 4) Open the Data Factory in the dev resource group and connect it with the
+  The first command makes sure the azure cli is authorized. 
+ 5) Open the Data Factory in the dev resource group and connect it with the
  provisioned Azure DevOps Repository.
  Now create the following.
  	- Create the linked service to the blob storage using the Key Vault to
@@ -77,12 +77,12 @@ See instructions below.
 	- Create two datasets using the uploaded file 
 	- Create a pipeline that copies the file from source to sink. 
  Make sure that the ARM templates get uploaded to Azure DevOps 
- 5) Create a Release Pipeline.
+ 6) Create a Release Pipeline.
  	- As an artifact select the adf\_publish branch. 
 	- Create a test stage with a "ARM Template Deployment" task
 	- Change the parameters to point to the right resources in test instead
 	  of dev.
 	- Repeat these steps for the prod env. 
- 6) Configure devops to automatically trigger on updates to the master branch.
+ 7) Configure devops to automatically trigger on updates to the master branch.
     Run the release pipeline to make sure everything works. 
 
